@@ -1,3 +1,5 @@
+.idea
+node-modules
 # Logs
 logs
 *.log
