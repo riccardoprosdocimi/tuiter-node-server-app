@@ -13,10 +13,12 @@ const findTuits = (req, res) => {
 const createTuit = (req, res) => {
     const newTuit = req.body;
     newTuit._id = (new Date()).getTime() + '';
+    newTuit.topic = "Space"
     newTuit.username = "NASA";
     newTuit.handle = "@nasa";
     newTuit.time = 'Just now';
     newTuit.image = "nasa.png"
+    newTuit.title = "A new tuit from NASA"
     newTuit.likes = 0;
     newTuit.liked = false;
     newTuit.dislikes = 0;
